@@ -15,7 +15,7 @@ body {
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
-    display: block;
+    display: block
 }
 
 audio,canvas,progress,video {
@@ -121,10 +121,10 @@ button,select {
     text-transform: none
 }
 
-/* button,html input[type=button],input[type=reset],input[type=submit] {
+button,html input[type=button],input[type=reset],input[type=submit] {
     -webkit-appearance: button;
     cursor: pointer
-} */
+}
 
 button[disabled] {
     cursor: default!important
@@ -152,10 +152,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     height: auto
 }
 
-/* input[type=search] {
+input[type=search] {
     box-sizing: initial;
     -webkit-appearance: textfield
-} */
+}
 
 input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration {
     -webkit-appearance: none
@@ -2929,9 +2929,9 @@ textarea.form-control {
     height: auto
 }
 
-/* input[type=search] {
+input[type=search] {
     -webkit-appearance: none
-} */
+}
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     input[type=date].form-control,input[type=datetime-local].form-control,input[type=month].form-control,input[type=time].form-control {
@@ -5483,7 +5483,25 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
     color: #843534
 }
 
+@-webkit-keyframes progress-bar-stripes {
+    0% {
+        background-position: 40px 0
+    }
 
+    to {
+        background-position: 0 0
+    }
+}
+
+@keyframes progress-bar-stripes {
+    0% {
+        background-position: 40px 0
+    }
+
+    to {
+        background-position: 0 0
+    }
+}
 
 .progress {
     height: 20px;
@@ -6156,7 +6174,7 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:focus,a.list-gro
 }
 
 button.close {
-    /* -webkit-appearance: none; */
+    -webkit-appearance: none;
     padding: 0;
     cursor: pointer;
     background: 0 0;
@@ -6687,7 +6705,7 @@ button.close {
     right: 0;
     left: auto;
     background-image: linear-gradient(90deg,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5));
-    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00000000",endColorstr="#80000000",GradientType=1); */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00000000",endColorstr="#80000000",GradientType=1);
     background-repeat: repeat-x
 }
 
@@ -8436,7 +8454,9 @@ button.close {
     }
 }
 
-
+.background-student {
+    background: #e0fffe
+}
 
 .background-student .inner-background {
     background: #a9fffe;
@@ -8446,15 +8466,12 @@ button.close {
 
 .background-teacher {
     background: #dbfdf7
-
 }
 
 .background-teacher .inner-background {
     background: #b1fbb6;
     background: -webkit-gradient(left top,left bottom,color-stop(0,#b1fbb6),color-stop(100%,#61c9bd));
     background: linear-gradient(180deg,#b1fbb6 0,#61c9bd)
-
-    
 }
 
 .input-wrap {
@@ -8470,7 +8487,7 @@ button.close {
     border-right: 1px solid #c7c7c7;
     position: absolute;
     top: 8px;
-    left: 8px;
+    left: 15px;
     display: flex;
     align-items: center
 }
@@ -8481,8 +8498,7 @@ button.close {
     border-radius: 10px;
     background-color: #f8f8f8;
     border: 1px solid #f0f0f0;
-    padding: 8px 8px 8px 155px;
-    box-sizing : border-box;
+    padding: 8px 8px 8px 155px
 }
 
 .input-wrap.input-error .input-field {
@@ -8565,10 +8581,10 @@ button.close {
     -webkit-appearance: none;
     margin: 0
 }
-/* 
+
 .input-design>.input-field[type=number] {
     -moz-appearance: textfield
-} */
+}
 
 .input-empty {
     animation: shake .3s ease-in-out 0s 3;
@@ -8638,7 +8654,7 @@ button.close {
     top: 50%;
     left: 50%;
     border-radius: 50%;
-    background: url(../src/images/logo.svg) 50%;
+    background: url(../src/images/student-login.svg) 50%;
     background-size: 100% 100%;
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
@@ -9080,14 +9096,16 @@ button.close {
 
 * {
     margin: 0;
-    /* padding:0; */
-    /* -webkit-font-smoothing:antialiased; */
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* text-rendering:optimizeLegibility; */
-    /* outline:none!important; */
+    text-rendering: optimizeLegibility;
+    outline: none!important
 }
 
-
+*,html {
+    box-sizing: border-box
+}
 
 html {
     font-size: 10px
@@ -9399,7 +9417,7 @@ img {
 }
 
 .date,.h1,.h2,.h3,.h4,.h5,.h6,.time,a,address,button,h1,h2,h3,h4,h5,h6,label,p,span {
-    transition: .35s ease;
+    transition: .35s ease
 }
 
 .p-0 {
@@ -9706,7 +9724,11 @@ img {
     border: 0!important
 }
 
-
+.main-wrapper {
+    position: relative;
+    float: left;
+    width: 100%
+}
 
 .menu-isopened {
     overflow: hidden
@@ -11926,20 +11948,19 @@ img {
 
 .login-main-wrapper,.user-profile-flex {
     display: flex;
-    /* flex-wrap:wrap; */
+    flex-wrap: wrap;
     flex-direction: row;
-    -webkit-box-align:center;
+    -webkit-box-align: center;
     -ms-flex-align: center;
     -ms-grid-row-align: center;
-    align-items: center;
+    align-items: center
 }
 
 .login-main-wrapper {
-    width:100%;
+    width: 100%;
     height: 100vh;
-    justify-content: center;
+    justify-content: center
 }
-
 
 .login-main-wrapper .login-wrapper {
     width: 100%;
@@ -11961,10 +11982,9 @@ img {
     margin: 0 auto
 }
 
-
 .login-main-wrapper .login-flex {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     flex-direction: row;
     height: 100%;
     background-color: #fff
@@ -11986,8 +12006,6 @@ img {
     -ms-grid-row-align: center;
     align-items: center
 }
-
-
 
 .login-main-wrapper .login-flex .login-cols:last-child {
     padding-top: 20px
@@ -38958,6 +38976,5 @@ img {
     -webkit-transform: none;
     transform: none
 }
-
 
 /*# sourceMappingURL=main.5eee2303.chunk.css.map */
